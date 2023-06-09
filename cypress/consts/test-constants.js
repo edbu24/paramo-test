@@ -1,0 +1,1 @@
+export const CONGRATULATIONS_MESSAGE = ' Congratulations! '
