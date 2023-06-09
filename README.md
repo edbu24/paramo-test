@@ -4,6 +4,7 @@ Steps to execute the test:
 Clone the repository
 
 git clone https://github.com/edbu24/paramo-test.git
+
 Install all the dependencies:
 
 npm install
