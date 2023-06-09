@@ -41,6 +41,10 @@ export class SignUpPage{
         return cy.get('.button.button--s4.button--t1 ')
     }
 
+    /**
+     * Verify iff the currency selected is USD should select the no Bonus checkpoint
+     * @param {string} currency 
+     */
     selectCurrency(currency) {
         this.currencyDropdown.click();
         this.currencyList.contains(currency).click();
@@ -51,6 +55,10 @@ export class SignUpPage{
         })
     }
 
+    /**
+     * Fillout all the mandatory fields on the register
+     * Email is generate by the Date.now() so every time will be create a new email
+     */
     createAccount() {
         this.emailInput.type(`${Date.now()}@testemail.com`)
         this.termsAndConditionCheckbox.click()
